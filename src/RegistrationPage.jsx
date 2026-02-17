@@ -15,7 +15,7 @@ export default function RegistrationPage() {
     setError(null); // Clear previous errors
 
     try {
-      const response = await fetch('http://localhost:9090/api/users/register', {
+      const response = await fetch(`${process.env.VITE_API_BASE_URL}/api/users/register`, {
         method: 'POST', 
         headers: {
           'Content-Type': 'application/json',
