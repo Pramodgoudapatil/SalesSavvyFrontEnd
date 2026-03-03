@@ -19,6 +19,8 @@ export default function LoginPage() {
     }
 
     try {
+      console.log("waiting");
+      
        const response = await fetch("http://localhost:9090/api/auth/login", {
         method: "POST",
         headers: {
