@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./assets/styles.css";
 const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
+
 export default function LoginPage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -21,7 +22,7 @@ export default function LoginPage() {
     try {
       console.log("waiting");
       
-       const response = await fetch("https://salessavvyproject.onrender.com/api/auth/login", {
+       const response = await fetch(`${BASE_URL}/api/auth/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
