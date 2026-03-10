@@ -22,7 +22,7 @@ export default function LoginPage() {
     try {
       console.log("waiting");
       
-       const response = await fetch(`${BASE_URL}/api/auth/login`, {
+       const response = await fetch(`${VITE_BASE_URL}/api/auth/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

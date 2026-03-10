@@ -16,7 +16,7 @@ export default function RegistrationPage() {
 
     try {
       //const response = await fetch('http://localhost:9090/api/users/register', {
-      const response = await fetch(`${BASE_URL}/api/users/register`, {
+      const response = await fetch(`${VITE_BASE_URL}/api/users/register`, {
         method: 'POST', 
         headers: {
           'Content-Type': 'application/json',
