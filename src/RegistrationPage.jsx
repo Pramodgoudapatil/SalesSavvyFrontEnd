@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './assets/styles.css';
 import { useNavigate } from 'react';
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 export default function RegistrationPage() {
   const [username, setUsername] = useState('');
